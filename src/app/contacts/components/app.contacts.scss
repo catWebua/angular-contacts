@@ -46,7 +46,7 @@ header {
   font-style: italic;
   font-weight: normal;
   font-size: $font-s;
-  line-height: 14px;
+  line-height: $h-l-text;
   color: #333333;
   outline:none;
   padding: 6px 0 6px 16px;
@@ -73,7 +73,7 @@ header {
     font-style: italic;
     font-weight: normal;
     font-size: $font-s;
-    line-height: 14px;
+    line-height: $h-l-text;
     color: #333333;
     opacity: 0.8;
     outline:none;
@@ -159,4 +159,48 @@ input:checked + .slider:before {
     opacity: 0.3;
     padding-left: 10px;
   }
+}
+
+.card-contact{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-contact-box{
+  display: flex;
+  align-items: flex-start;
+  max-width: 350px;
+  width: 100%;
+  margin-top: 30px;
+  & img{
+    margin-right: 28px;
+  }
+  &__name{
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-l;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  &__company{
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-s;
+    line-height: $h-l-text;
+    color: #A6AAAD;
+    margin: 10px 0;
+  }
+  &__tel-mail{
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-s;
+    line-height: 14px;
+    color: #212121;
+  }
+}
+
+.drop-text span{
+  display: block;
 }
