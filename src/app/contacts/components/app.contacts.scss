@@ -14,7 +14,10 @@ header {
 }
 
 .container-contacts {
+  max-width: 1395px;
+  width: 100%;
   background-color: $white;
+  margin: 0 auto;
   padding: 41px 0 38px 0;
 }
 .container{
@@ -203,4 +206,33 @@ input:checked + .slider:before {
 
 .drop-text span{
   display: block;
+}
+
+
+.paginator-container{
+  text-align: center;
+  margin-top: 44px;
+  & span{
+    border: 1.28px solid #6E767D;
+    border-radius: 50%;
+    text-align: center;
+  }
+  &__number{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #6E767D;
+    cursor: pointer;
+    margin-right: 16px;
+    padding: 5px 9px;
+  }
+  &__arrow{
+    background-image: url("src/assets/icons/arrow_right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    padding: 3px 12px;
+  }
 }
