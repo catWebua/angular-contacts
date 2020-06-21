@@ -1,9 +1,9 @@
-header{
+header {
   border-bottom: 3px solid #D7D7D7;
   text-align: center;
 }
 
-.header__title{
+.header__title {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -13,6 +13,150 @@ header{
   padding: 24px 0;
 }
 
-.container-contacts{
+.container-contacts {
   background-color: $white;
+  padding: 41px 0 38px 0;
+}
+.container{
+  max-width: 1222px;
+  width: 100%;
+  margin: 0 auto;
+}
+.search-panel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__select {
+    max-width: 420px;
+    width: 100%;
+  }
+}
+
+.search-panel__select {
+  height: 100%;
+  background-color: $white;
+  opacity: 0.9;
+  border: 0.704545px solid #6E767D;
+  box-sizing: border-box;
+  box-shadow: 0 2.81818px 14.7955px rgba(0, 0, 0, 0.07);
+  border-bottom-left-radius: 72px;
+  border-top-left-radius: 72px;
+  cursor: pointer;
+  font-style: italic;
+  font-weight: normal;
+  font-size: $font-s;
+  line-height: 14px;
+  color: #333333;
+  outline:none;
+  padding: 6px 0 6px 16px;
+}
+
+
+.search-panel__search-form{
+  max-width: 830px;
+  width: 100%;
+}
+
+
+.search-form {
+  &__input {
+    width: 100%;
+    background-image: url("src/assets/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: 99%;
+    border: 0.704545px solid #6E767D;
+    box-sizing: border-box;
+    box-shadow: 0 2.81818px 14.7955px rgba(0, 0, 0, 0.07);
+    border-bottom-right-radius: 72px;
+    border-top-right-radius: 72px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: $font-s;
+    line-height: 14px;
+    color: #333333;
+    opacity: 0.8;
+    outline:none;
+    margin-left: -1px;
+    padding: 7px 0 7px 16px;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: -2px;
+  bottom: -5px;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle-option{
+  display: flex;
+  &__switch-one{
+    display: flex;
+    align-items: center;
+    margin-right: 54px;
+  }
+  &__switch-two{
+    display: flex;
+    align-items: center;
+  }
+  &__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-l;
+    line-height: 19px;
+    letter-spacing: 0.15px;
+    color: $black;
+    opacity: 0.3;
+    padding-left: 10px;
+  }
 }

@@ -3,5 +3,39 @@
 </header>
 
 <div class="container-contacts">
+    <div class="container">
+        <div class="search-panel">
+            <select name="name" class="search-panel__select">
+                <option value="ivan" selected>ММК им. Ильича</option>
+                <option value="petr">Петров Петр Петрович</option>
+                <option value="ivan">Иванов Иван Иванович</option>
+                <option value="petr">Петров Петр Петрович</option>
+            </select>
 
+            <div class="search-panel__search-form">
+                <form class="search-form">
+                    <input class="search-form__input" placeholder="Введите ФИО, должность или номер телефона">
+                    <button class="search-form__button"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="toggle-option">
+            <div class="toggle-option__switch-one">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <h4 class="toggle-option__text">Показать структуру контактов</h4>
+            </div>
+
+            <div class="toggle-option__switch-two">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                <h4 class="toggle-option__text">Активное состояние</h4>
+            </div>
+        </div>
+    </div>
 </div>
